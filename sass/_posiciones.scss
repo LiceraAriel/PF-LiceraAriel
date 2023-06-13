@@ -1,0 +1,53 @@
+@import "./assets/variables";
+
+.posiciones{
+    h2{
+        font-family: $fuenteSubtitulo;
+        font-size: $tamanio-desktop;
+        color: $colorTexto;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .contenedortabla{
+        display: grid;
+        justify-content: center;
+        background-color: rgb(58, 61, 71);
+        table{
+            border-collapse:separate;
+            margin: 30px;
+            .tituloTabla{
+                color: $colorTexto;
+                font-size: $tamanio-desktop;
+                background-color: gray;
+                th{
+                    padding: 5px;
+                }
+            }
+            .equipos{
+                color: $colorTexto;
+                font-size: $tamanio-movile;
+                td{
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .posiciones{
+        .contenedortabla{
+            table{
+                margin: 0%;
+                .tituloTabla{
+                    font-size: $tamanio-movile;
+                }
+                .equipos{
+                    font-size: $tamanio-movile - (0.5rem);
+                }
+            }
+        }
+    }
+}

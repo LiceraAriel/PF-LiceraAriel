@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendario oficial de los partidos de UNIWE FC.">
+    <meta name="keywords" content="fútbol, partidos, torneo, equipo, sintético, jugadores, tabla, posiciones">
     <link rel="icon" type="image/png" sizes="32x32" href="../Img/favicon-32x32.png">
     <title>UNIWE FC - Calendario</title>
     <!-- google fonts -->
@@ -17,8 +19,10 @@
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css main -->
-    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 
 <body>
@@ -46,12 +50,12 @@
             </nav>
         </header>
         
-        <main>
-            <h2 class="subtitulos">C A L E N D A R I O</h2>
+        <main class="calendario">
+            <h2 data-aos="fade-right">C A L E N D A R I O</h2>
                 <div class="contenedorCalendario">
-                    <section class="calendario">
-                        <h3>A B R I L</h3>
-                            <ol class="meses">
+                    <section class="meses">
+                        <h3 data-aos="fade-right">A B R I L</h3>
+                            <ol data-aos="zoom-in">
                                 <li class="Días">Lun</li>
                                 <li class="Días">Mar</li>
                                 <li class="Días">Mié</li>
@@ -92,9 +96,9 @@
                                 <li class="Números"><a class="díapartido" href="./notas/amistosos.html#3">30</a></li>
                             </ol>
                     </section>
-                    <section class="calendario">
-                        <h3>M A Y O</h3>
-                            <ol class="meses">
+                    <section class="meses">
+                        <h3 data-aos="fade-right">M A Y O</h3>
+                            <ol data-aos="zoom-in">
                                 <li class="Días">Lun</li>
                                 <li class="Días">Mar</li>
                                 <li class="Días">Mié</li>
@@ -137,9 +141,9 @@
                             </ol>
                     </section>
             
-                    <section class="calendario">
-                        <h3>J U N I O</h3>
-                            <ol class="meses">
+                    <section class="meses">
+                        <h3 data-aos="fade-right">J U N I O</h3>
+                            <ol data-aos="zoom-in">
                                 <li class="Días">Lun</li>
                                 <li class="Días">Mar</li>
                                 <li class="Días">Mié</li>
@@ -181,9 +185,9 @@
                             </ol>
                     </section>
             
-                    <section class="calendario">
-                        <h3>J U L I O</h3>
-                            <ol class="meses">
+                    <section class="meses">
+                        <h3 data-aos="fade-right">J U L I O</h3>
+                            <ol data-aos="zoom-in">
                                 <li class="Días">Lun</li>
                                 <li class="Días">Mar</li>
                                 <li class="Días">Mié</li>
@@ -225,25 +229,71 @@
                                 <li class="Números">31</li>
                             </ol>
                         </section>
-                        <section>
-                            
-                        </section>
+
+                        <section class="meses">
+                            <h3 data-aos="fade-right">A G O S T O</h3>
+                                <ol data-aos="zoom-in">
+                                    <li class="Días">Lun</li>
+                                    <li class="Días">Mar</li>
+                                    <li class="Días">Mié</li>
+                                    <li class="Días">Jue</li>
+                                    <li class="Días">Vie</li>
+                                    <li class="Días">Sáb</li>
+                                    <li class="Días">Dom</li>
+            
+                                    <li class="Primerdíaagosto Números">1</li>
+                                    <li class="Números">2</li>
+                                    <li class="Números">3</li>
+                                    <li class="Números">4</li>
+                                    <li class="Números">5</li>
+                                    <li class="Números">6</li>
+                                    <li class="Números">7</li>
+                                    <li class="Números">8</li>
+                                    <li class="Números">9</li>
+                                    <li class="Números">10</li>
+                                    <li class="Números">11</li>
+                                    <li class="Números">12</li>
+                                    <li class="Números">13</li>
+                                    <li class="Números">14</li>
+                                    <li class="Números">15</li>
+                                    <li class="Números">16</li>
+                                    <li class="Números">17</li>
+                                    <li class="Números">18</li>
+                                    <li class="Números">19</li>
+                                    <li class="Números">20</li>
+                                    <li class="Números">21</li>
+                                    <li class="Números">22</li>
+                                    <li class="Números">23</li>
+                                    <li class="Números">24</li>
+                                    <li class="Números">25</li>
+                                    <li class="Números">26</li>
+                                    <li class="Números">27</li>
+                                    <li class="Números">28</li>
+                                    <li class="Números">29</li>
+                                    <li class="Números">30</li>
+                                    <li class="Números">31</li>
+                                </ol>
+                            </section>
                     </div>
         </main>
         
-        <footer class="pie-de-página">
+        <footer>
             <div><a href="../index.html"><img class="logo-footer" src="../Img/UNIWE LOGO.png" alt="escudo de UNIWE"></a></div>
-            <p class="derechos">UNIWE FC © 2023 Todos los derechos reservados</p>
-            <ul class="redesContainer">
-                <li><a href="https://instagram.com/uniwe_fc?igshid=YmMyMTA2M2Y=" target="_blank"><img class="redes" src="https://www.pngplay.com/wp-content/uploads/12/Instagram-Logo-Transparent-Images.png" alt="logo de instagram"></a></li>
-                <li></li><a href="https://www.tiktok.com/@uniwe.fc" target="_blank"><img class="redes" src="https://seeklogo.com/images/T/tiktok-share-icon-black-logo-29FFD062A0-seeklogo.com.png" alt="logo de tik tok"></a></li>
+            <p>UNIWE FC © 2023 Todos los derechos reservados</p>
+            <ul>
+                <li><a href="https://instagram.com/uniwe_fc?igshid=YmMyMTA2M2Y=" target="_blank"><img src="https://www.pngplay.com/wp-content/uploads/12/Instagram-Logo-Transparent-Images.png" alt="logo de instagram"></a></li>
+                <li><a href="https://www.tiktok.com/@uniwe.fc" target="_blank"><img src="https://seeklogo.com/images/T/tiktok-share-icon-black-logo-29FFD062A0-seeklogo.com.png" alt="logo de tik tok"></a></li>
             </ul>
         </footer>
     </div>
-    
 
-        <!-- boostrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+@import "./assets/variables";
+
+.calendario{
+    h2{
+        font-family: $fuenteSubtitulo;
+        color: $colorTexto;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .contenedorCalendario{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            .meses{
+                h3{
+                    text-align: center;
+                    width: 100%;
+                    font-size: $tamanio-desktop;
+                    margin-top: 5px;
+                    color: aquamarine;
+                }
+                ol{
+                    list-style: none;
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    width: 100%;
+                    font-size: $tamanio-desktop - (0.5rem);
+                    padding: 10px;
+                    .Días{
+                        background: $colorTexto;
+                        font-weight: bold;
+                        text-align: $pos-desktop;
+                    }
+                    .Primerdíaabril{
+                        grid-column-start: 6;
+                    }
+                    .Primerdíajunio{
+                        grid-column-start: 4;
+                    }
+                    .Primerdíajulio{
+                        grid-column-start: 6;
+                    }
+                    .Primerdíaagosto{
+                        grid-column-start: 2;
+                    }
+                    .Números{
+                        text-align: right;
+                        color: $colorTexto;
+                    }
+                    .díapartido{
+                        text-decoration: none;
+                        color: whitesmoke;
+                        &:hover{
+                            font-weight: bolder;
+                            text-decoration-line: underline;
+                            background-color: $colorNav-cel;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+@media screen and (max-width:500px){
+.calendario{
+    .contenedorCalendario{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        .meses{
+            ol{
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 5px;
+                }
+            }
+        }
+    }
+}
