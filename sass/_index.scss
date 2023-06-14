@@ -52,16 +52,6 @@
         }
     }
 
-.contenedorcarrusel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-        .foto-partido{
-        padding: 10px 10px 10px 10px;
-        width: 350px;
-        }
-}
-
 @media screen and (max-width:500px){
     .index{
         section{
@@ -84,7 +74,6 @@
             .fotosContainer{
                 display: grid;
                 grid-template-columns: auto;
-                justify-content: space-around;
             }
         }   
     }
