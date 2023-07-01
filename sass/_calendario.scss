@@ -11,6 +11,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-content: center;
+            margin-left: 10px;
+            margin-right: 10px;
             .meses{
                 h3{
                     text-align: center;
@@ -50,10 +52,10 @@
                     .díapartido{
                         text-decoration: none;
                         color: whitesmoke;
+                        font-weight: bolder;
+                        text-decoration-line: underline;
                         &:hover{
-                            font-weight: bolder;
-                            text-decoration-line: underline;
-                            background-color: $colorNav-cel;
+                            text-decoration-line: none;
                         }
                     }
                 }
@@ -68,6 +70,8 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
+        margin-left: 5px;
+        margin-right: 5px;
         .meses{
             ol{
                 font-size: 1rem;

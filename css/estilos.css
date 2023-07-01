@@ -1,5 +1,100 @@
 @charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+main {
+  grid-area: main;
+  background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+header {
+  grid-area: header;
+  font-size: 2rem;
+  background-color: rgb(61, 61, 201);
+}
+header nav .logo {
+  width: 100px;
+  height: 100px;
+}
+header nav div ul li a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    background-color: rgb(197, 74, 74);
+    display: grid;
+    height: auto;
+    width: auto;
+  }
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  background-color: rgb(61, 61, 201);
+  justify-content: space-around;
+}
+footer div a img {
+  width: 50px;
+  height: 50px;
+}
+footer p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+footer p:hover {
+  font-weight: bolder;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+}
+footer ul li a img {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    background-color: rgb(197, 74, 74);
+  }
+}
 .index section {
   display: grid;
   grid-template-columns: 100%;
@@ -46,16 +141,6 @@
   height: 100%;
 }
 
-.contenedorcarrusel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contenedorcarrusel .foto-partido {
-  padding: 10px 10px 10px 10px;
-  width: 350px;
-}
-
 @media screen and (max-width: 500px) {
   .index section {
     display: grid;
@@ -78,7 +163,6 @@
   .index section .fotosContainer {
     display: grid;
     grid-template-columns: auto;
-    justify-content: space-around;
   }
 }
 .equipo .jugadores {
@@ -162,6 +246,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .calendario .contenedorCalendario .meses h3 {
   text-align: center;
@@ -202,11 +288,11 @@
 .calendario .contenedorCalendario .meses ol .díapartido {
   text-decoration: none;
   color: whitesmoke;
-}
-.calendario .contenedorCalendario .meses ol .díapartido:hover {
   font-weight: bolder;
   text-decoration-line: underline;
-  background-color: rgb(197, 74, 74);
+}
+.calendario .contenedorCalendario .meses ol .díapartido:hover {
+  text-decoration-line: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -214,6 +300,8 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .calendario .contenedorCalendario .meses ol {
     font-size: 1rem;
@@ -248,6 +336,9 @@
 .posiciones .contenedortabla table .equipos {
   color: white;
   font-size: 1.5rem;
+}
+.posiciones .contenedortabla table .equipos:hover {
+  font-weight: bold;
 }
 .posiciones .contenedortabla table .equipos td {
   padding: 10px;
@@ -285,10 +376,7 @@ img {
   height: 100%;
 }
 
-.container-fluid {
-  --bs-gutter-x: 0px;
-}
-.container-fluid .body {
+.body {
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
   grid-template-columns: auto auto auto;
@@ -374,10 +462,7 @@ img {
   height: 100%;
 }
 
-.container-fluid {
-  --bs-gutter-x: 0px;
-}
-.container-fluid .body {
+.body {
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
   grid-template-columns: auto auto auto;
@@ -441,105 +526,6 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-  }
-}
-* {
-  padding: 0%;
-  margin: 0%;
-  text-decoration: none;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-.container-fluid {
-  --bs-gutter-x: 0px;
-}
-.container-fluid .body {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-}
-
-main {
-  grid-area: main;
-  background-color: black;
-}
-
-@media screen and (max-width: 500px) {
-  .body {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-}
-header {
-  grid-area: header;
-  font-size: 2rem;
-  background-color: rgb(61, 61, 201);
-}
-header nav .logo {
-  width: 100px;
-  height: 100px;
-}
-header nav div ul li a:hover {
-  text-decoration: underline;
-  font-weight: bolder;
-}
-
-@media screen and (max-width: 500px) {
-  header {
-    background-color: rgb(197, 74, 74);
-    display: grid;
-    height: auto;
-    width: auto;
-  }
-}
-footer {
-  grid-area: footer;
-  display: flex;
-  background-color: rgb(61, 61, 201);
-  justify-content: space-around;
-}
-footer div a img {
-  width: 50px;
-  height: 50px;
-}
-footer p {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-}
-footer p:hover {
-  font-weight: bolder;
-}
-footer ul {
-  list-style: none;
-  display: flex;
-}
-footer ul li a img {
-  width: 25px;
-  height: 25px;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 500px) {
-  footer {
-    background-color: rgb(197, 74, 74);
   }
 }
 

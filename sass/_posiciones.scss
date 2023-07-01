@@ -26,6 +26,9 @@
             .equipos{
                 color: $colorTexto;
                 font-size: $tamanio-movile;
+                &:hover{
+                    font-weight: bold;
+                }
                 td{
                     padding: 10px;
                     text-align: center;
