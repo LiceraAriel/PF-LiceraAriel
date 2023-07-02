@@ -95,19 +95,20 @@ footer ul li a img {
     background-color: rgb(197, 74, 74);
   }
 }
-.index section {
+.inicio section {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
+  overflow: hidden;
 }
-.index section h2 {
+.inicio section h2 {
   font-size: 2.5rem;
   text-align: center;
   font-family: "Russo One", sans-serif;
   padding-top: 5px;
   color: white;
 }
-.index section p {
+.inicio section p {
   font-size: 1.5rem;
   line-height: 120%;
   text-align: center;
@@ -117,50 +118,51 @@ footer ul li a img {
   margin-left: 200px;
   margin-right: 200px;
 }
-.index section .contenedorImg {
+.inicio section .contenedorImg {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
 }
-.index section .contenedorImg .fotoPartido {
+.inicio section .contenedorImg .fotoPartido {
   justify-content: space-around;
+  border-radius: 5%;
   padding: 10px;
 }
-.index section .fotosContainer {
+.inicio section .fotosContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   padding: 0%;
 }
-.index section .fotosContainer div img {
+.inicio section .fotosContainer div img {
   padding: 5px 5px 5px 5px;
 }
-.index section .fotosContainer div iframe {
+.inicio section .fotosContainer div iframe {
   padding: 5px 5px 5px 5px;
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 500px) {
-  .index section {
+  .inicio section {
     display: grid;
     grid-template-rows: auto;
   }
-  .index section p {
+  .inicio section p {
     margin-left: 0%;
     margin-right: 0%;
   }
-  .index section .contenedorImg {
+  .inicio section .contenedorImg {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     justify-content: center;
   }
-  .index section .contenedorImg .fotoPartido {
-    padding: 2px;
+  .inicio section .contenedorImg .fotoPartido {
+    padding: 5px;
     justify-content: center;
   }
-  .index section .fotosContainer {
+  .inicio section .fotosContainer {
     display: grid;
     grid-template-columns: auto;
   }
@@ -396,6 +398,9 @@ main {
     grid-template-rows: auto;
   }
 }
+.notas {
+  overflow: hidden;
+}
 .notas .containernotas h2 {
   font-family: "Russo One", sans-serif;
   font-size: 2.5rem;
@@ -429,6 +434,7 @@ main {
   height: auto;
   justify-content: center;
   padding: 10px;
+  border-radius: 7%;
 }
 
 @media screen and (max-width: 500px) {
@@ -440,6 +446,9 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+  }
+  .notas .containernotas article p {
+    padding: 0 5px 0 5px;
   }
 }
 * {
@@ -482,6 +491,9 @@ main {
     grid-template-rows: auto;
   }
 }
+.notas {
+  overflow: hidden;
+}
 .notas .containernotas h2 {
   font-family: "Russo One", sans-serif;
   font-size: 2.5rem;
@@ -515,6 +527,7 @@ main {
   height: auto;
   justify-content: center;
   padding: 10px;
+  border-radius: 7%;
 }
 
 @media screen and (max-width: 500px) {
@@ -526,6 +539,9 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+  }
+  .notas .containernotas article p {
+    padding: 0 5px 0 5px;
   }
 }
 
